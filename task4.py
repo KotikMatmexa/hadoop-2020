@@ -11,7 +11,7 @@ class MRWordUpper(MRJob):
         for word in WORD_RE.findall(line):
             yield word.lower(), word[0].isupper()
             
-    #через комплексные числа счиатем общее число слов и число слов с большой буквы    
+    #Cчиатем общее число слов и число слов с большой буквы    
     def reducer(self, word, upper):
         count = sum(x + 1j for x in upper)
         if count.real > int(count.imag) / 2 and int(count.imag) > 10:

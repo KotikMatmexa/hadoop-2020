@@ -16,6 +16,4 @@ class MRWordMean(MRJob):
 
 if __name__ == '__main__':    
     MRWordMean.run() 
-    #Результат
-    #6.056905087028759
     

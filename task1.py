@@ -19,5 +19,3 @@ class MRWordLongest(MRJob):
         
 if __name__ == '__main__':    
     MRWordLongest.run()
-    #Результат
-    #63	"codice_16codice_17codice_18codice_19codice_20codice_21codice_22"

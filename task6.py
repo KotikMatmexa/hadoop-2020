@@ -9,7 +9,7 @@ class MRWordAbr(MRJob):
     def mapper(self, _, line):
         for match in WORD_RE.findall(line):
             yield match.lower(), 1
-    #полуичть число вхождений                   
+    #получить число вхождений                   
     def combiner(self, word, counts):
         yield None, (sum(counts), word)
     #

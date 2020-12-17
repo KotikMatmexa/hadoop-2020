@@ -35,5 +35,3 @@ class MRWordMostUsedENG(MRJob):
 
 if __name__ == '__main__':
     MRWordMostUsedENG.run()
-    #Результат
-    #13024	"ru"
